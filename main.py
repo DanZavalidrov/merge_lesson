@@ -1,44 +1,21 @@
-"""
-1. Ключевые слова, встроенные функции (для ознакомления, знать,
-как не стоит называть переменные)
-"""
-print ('\033[1m' + 'Hello world!')
+#6. Кортежи
+f = ('s',);
+print(f)
 print ('\n')
-"""
-complex([real[, imag]]) 
-dict([object]) 
-float([X]) 
-frozenset([последовательность]) 
-int([object], [основание системы счисления]) 
-list([object]) 
-memoryview([object]) 
-object() 
-range([start=0], stop, [step=1]) 
-и так далее.
-"""
+h = tuple('Hello, Ciao')
+print(h)
+print('\n')
 
+#7. Множества
+a = (set('Hello my friend'))
+print (a)
 
-
-#2. Числа
-print(pow(3, 2, 2))
-print(6+6,'  ',  5/5,'  ',  6%5,'  ', 5**2)
-print(divmod(9,2))
+words = ['Hello', 'Hello', 'Nice']
+print(set(words))
 print ('\n')
 
-#3. Строки
-
-print('My name is {}'.format('Dan'))
-print('Age %i' % 18)
-print ('\n')
-
-#4. Списки (массивы)
-a = ['a' , 'c' , 'd']
-print(list(a))
-a.remove('d')
-print(list(a))
-print ('\n')
-
-#5. Индексы и срезы
-c = [1, 2 , 10 , 'b']
-print(c[3])
-print(c[::2])
+#8. Байтовые строки
+print('привет как дела'.encode('utf-8'))
+print (b'\xd0\xbf\xd1\x80\xd0\xb8\xd0\xb2\xd0\xb5\xd1\x82 \xd0\xba\xd0\xb0\xd0\xba \xd0\xb4\xd0\xb5\xd0\xbb\xd0\xb0'.decode('utf-8'))
+b = bytearray(b'hello!')
+print(b[3])
